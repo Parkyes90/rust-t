@@ -4,7 +4,6 @@ use std::io;
 fn main() {
     println!("숫자 맞히기");
     let secret_number = rand::thread_rng().gen_range(1, 101);
-    println!("사용자가 맞혀야할 숫자: {}", secret_number);
     loop {
         let mut guess = String::new();
         io::stdin()
